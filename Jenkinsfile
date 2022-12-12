@@ -16,8 +16,8 @@ pipeline {
     stage("Test changeset") {
         when {
             anyOf {
-                changeset 'charts/templates/*'
-                changeset 'charts/values.yaml'
+                changeset 'charts/example-service/templates/*'
+                changeset 'charts/example-service/values.yaml'
             }
         }
 
