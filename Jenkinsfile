@@ -1,5 +1,3 @@
-def updatedVersionNumber = ""
-
 pipeline {
   environment {
     REGISTRY = "us-central1-docker.pkg.dev"
@@ -23,4 +21,5 @@ pipeline {
             echo "Chart change"
         }
     }
+  }
 }
