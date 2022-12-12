@@ -10,6 +10,8 @@ pipeline {
     REPOSITORY = "charts"
   }
 
+  triggers { pollSCM('* * * * *') }
+
   stages {
     stage("Test changeset") {
         when {
