@@ -1,4 +1,6 @@
 pipeline {
+  agent any
+
   environment {
     REGISTRY = "us-central1-docker.pkg.dev"
     CHART = "testchart"
